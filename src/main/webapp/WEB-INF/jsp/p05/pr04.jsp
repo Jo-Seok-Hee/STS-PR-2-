@@ -30,7 +30,7 @@
 				</tr>
 			</thead>
 			<tbody>
-			<%-- --%>
+			<%-- 반복문 --%>
 				<c:forEach var="member" items="${members }" varStatus="status">
 					<tr>
 						<td>${status.count }</td>
@@ -43,29 +43,32 @@
 						</td>
 						
 						<td>
-							<%--여기서 부터 복습 --%>
-							${member.email }
+							
+							<c:set var="borderEmail" value="${member.email }"></c:set>
+							<b>${fn:split(borderEmail,"@")[0] }@</b>${fn:split(borderEmail,"@")[1] }
+							
 						</td>
-						<td>${member.introduce }</td>
+						
+						<%-- --%>
+						<td>
+							<c:set var="introduce" value="${member.introduce }" ></c:set>
+							<c:set var="introLimit" value="${fn:substring(introduce,0,15) }"></c:set>
+							
+							<c:choose>
+								<c:when test="${fn:length(introduce) gt 15 }">
+									${introLimit }...
+								</c:when>
+								<c:otherwise>
+									${introLimit }
+								</c:otherwise>
+							</c:choose>	
+						</td>
+						<%-- --%>
 					</tr>
 				</c:forEach>
 			<%-- --%>
 			</tbody>
-			
-		
-		
-		
-		
 		</table>
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	</div>
 	
 	
