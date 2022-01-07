@@ -30,7 +30,7 @@
 				</tr>
 			</thead>
 			<tbody>
-			<%-- --%>
+			<%-- 반복문 --%>
 				<c:forEach var="member" items="${members }" varStatus="status">
 					<tr>
 						<td>${status.count }</td>
@@ -43,6 +43,7 @@
 						</td>
 						
 						<td>
+
 							<c:set var="email" value="${member.email }"></c:set>
 							<b>${fn:split(email,"@")[0]}</b>@${fn:split(email,"@")[1]}
 							
@@ -59,10 +60,14 @@
 								</c:otherwise>
 							</c:choose>
 						</td>
+
+							
+
 					</tr>
 				</c:forEach>
 			<%-- --%>
 			</tbody>
+
 
 		</table>
 
