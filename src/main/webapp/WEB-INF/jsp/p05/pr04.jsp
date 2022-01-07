@@ -43,29 +43,29 @@
 						</td>
 						
 						<td>
-							<%--여기서 부터 복습 --%>
-							${member.email }
+							<c:set var="email" value="${member.email }"></c:set>
+							<b>${fn:split(email,"@")[0]}</b>@${fn:split(email,"@")[1]}
+							
 						</td>
-						<td>${member.introduce }</td>
+						<td>
+							<c:set var="intro" value="${member.introduce }"></c:set>
+							<c:choose>
+								<c:when test="${fn:length(intro) gt 15 }">
+									${intro }...
+									
+								</c:when>
+								<c:otherwise>
+									${intro }
+								</c:otherwise>
+							</c:choose>
+						</td>
 					</tr>
 				</c:forEach>
 			<%-- --%>
 			</tbody>
-			
-		
-		
-		
-		
+
 		</table>
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	</div>
 	
 	

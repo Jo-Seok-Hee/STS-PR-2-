@@ -1,30 +1,28 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+   <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+   
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<title>불러오기 실험</title>
 </head>
 <body>
-	<!--  int number1 = 100 -->
-	<c:set var="number1" value="100"/>
-	<h4>${number1 }</h4>
+	 <h1>나는 바보입니다 </h1>
+	 <jsp:include page="test/Test3.jsp" flush="true"></jsp:include>
+	 <jsp:include page="이름.jsp" flush="true"></jsp:include>
 	
-	<!--  int number2 = 200 -->
-	<c:set var="number2">200</c:set>
-	<h4>${number2 }</h4>
-	
-	<h1>변수 출력하기(c:out)</h1>
-	<h4><c:out value="900" /> </h4>
-	<h4><c:out value="${number1 }" /> </h4>
-	
-	
-	<!--   escapeXml=false 만 출력가능 c:out문에서 나와서 작동
-	<c:out value="<script>alert('출력')</script>" />
-	<c:out value="<script>alert('출력')</script>" escapeXml="true" />-->
-	<c:out value="<script>alert('출력')</script>" escapeXml="false" />
+	 
+	 
+	 
 	
 </body>
 </html>

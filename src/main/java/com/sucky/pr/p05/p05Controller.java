@@ -187,4 +187,11 @@ public class p05Controller {
 		return "/p05/pr04";
 	}
 	
+	@GetMapping("/p05/totaltest")
+	public String test() {
+		return "/p05/total/insertWeatherTable";
+	}
+	
+	
+	
 }
