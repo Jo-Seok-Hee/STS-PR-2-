@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import com.sucky.pr.p05total.dao.WeatherDAO;
 import com.sucky.pr.p05total.model.Weather;
 
-@Service("WeatherBO")
+@Service()
 public class WeatherBO {
 	
 	@Autowired

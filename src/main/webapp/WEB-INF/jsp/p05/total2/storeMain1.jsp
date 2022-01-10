@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+       <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <!DOCTYPE html>
@@ -12,24 +12,35 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-<title>날씨 종합문제</title>
+<title>배탈의 민족</title>
 </head>
 <body>
+	<%--가장 큰 틀 --%> 
 	<div id="wrap" class="container">
-		<div class="d-flex" style="height:900px;">
-	
-			<div class="col-2">
-				<jsp:include page="total/menu.jsp"></jsp:include>
+		<%--(배탈의 민족) 메인 상단 바 --%>
+		<header class="d-flex w-100 bg-success" style="height:50px;">
+			<h3 class="text-white align-self-center pl-3">배탈의 민족</h3>
+		</header>
+		<%-- (우리동네 가게) ~~~ 푸터 위에 --%>
+		<section class="w-100" style="height:800px;">
+			<h1>우리동네 가게</h1>
+			
+			<%-- 초록 테두리 박스 1개 --%>
+			<div class="container w-100" style="height=100px; border:1px solid #00fff2" >
 				
 			</div>
-			<div class="col-10" style="overflow:scroll;">
-				<jsp:include page="total/bodySelect.jsp" flush="ture"></jsp:include>
-			</div>
-		</div>
+			
+	
 		
-		<jsp:include page="total/footer.jsp" flush="ture"></jsp:include>
+		</section>
+		
+		<%--그냥 푸터 --%>
+		<hr><footer>
+			<b>(주)우와한형제</b><br>
+			<label class="text-secondary">고객센터:1500-1500</label>
+		</footer>
+	
+	
 	</div>
-
 </body>
 </html>
