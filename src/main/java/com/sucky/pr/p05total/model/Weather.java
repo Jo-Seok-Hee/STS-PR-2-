@@ -2,8 +2,11 @@ package com.sucky.pr.p05total.model;
 
 import java.util.Date;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 public class Weather {
 	private int id;
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date date;
 	private String weather;
 	private double temperatures;
@@ -12,6 +15,7 @@ public class Weather {
 	private double windSpeed;
 	private Date createdAt;
 	private Date updatedAt;
+	
 	public int getId() {
 		return id;
 	}

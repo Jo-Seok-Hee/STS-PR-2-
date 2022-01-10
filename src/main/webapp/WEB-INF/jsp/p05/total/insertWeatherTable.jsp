@@ -21,7 +21,7 @@
 		<h1>날씨 입력</h1>
 			<form method="get" action="/p05/insertWeather">
 				<div class="d-flex">
-					<label>날짜</label><input type="text" class="form-control w-25" name="date">
+					<label>날짜</label><input type="text" class="form-control w-25" name="date" placeholder="xxxx년 xx월 xx일">
 				
 					<label class="ml-3">날씨</label>
 					<select name="weather" class="form-control w-25">
@@ -54,14 +54,14 @@
 					
 						<input type="text" class="form-control w-25" name="precipitation">
 						<div class="input-group-append">
-						    <span class="input-group-text">℃</span>
+						    <span class="input-group-text">mm</span>
 						</div>
 						
 						<label>풍속</label>
 					
 						<input type="text" class="form-control w-25" name="windSpeed">
 						<div class="input-group-append">
-						    <span class="input-group-text">℃</span>
+						    <span class="input-group-text">km/h</span>
 						</div>		
 				</div>	
 				

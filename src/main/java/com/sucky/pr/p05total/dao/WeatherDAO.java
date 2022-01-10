@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 
 import com.sucky.pr.p05total.model.Weather;
 
-@Repository
+@Repository("WeatherDAO")
 public interface WeatherDAO {
 	
 	public List<Weather> selectWeather();

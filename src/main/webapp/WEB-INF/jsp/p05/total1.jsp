@@ -33,7 +33,7 @@
 							<a href="#" class="nav-link text-dark" style="font-size:18px;"><b>날씨</b></a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link text-dark" style="font-size:18px;"><b>날씨입력</b></b></a>
+							<a href="http://localhost:8080/p05/insertView" class="nav-link text-dark" style="font-size:18px;"><b>날씨입력</b></a>
 						</li>
 						<li class="nav-item">
 							<a href="#" class="nav-link text-dark" style="font-size:18px;"><b>테마날씨</b></a>
