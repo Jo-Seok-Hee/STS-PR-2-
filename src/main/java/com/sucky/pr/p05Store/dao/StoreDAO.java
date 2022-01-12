@@ -1,13 +1,13 @@
-package com.sucky.pr.p02.dao;
+package com.sucky.pr.p05Store.dao;
 
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
-import com.sucky.pr.p02.model.Store;
+import com.sucky.pr.p05Store.model.Store;
 
 @Repository
 public interface StoreDAO {
 	
-	public List<Store> selectStoreList();
+	public List<Store> selectStore();
 }

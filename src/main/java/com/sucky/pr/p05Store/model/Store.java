@@ -1,4 +1,4 @@
-package com.sucky.pr.p02.model;
+package com.sucky.pr.p05Store.model;
 
 import java.util.Date;
 

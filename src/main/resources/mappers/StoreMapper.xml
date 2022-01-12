@@ -2,10 +2,10 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
  
- <mapper namespace="com.sucky.pr.p02.dao.StoreDAO">
+ <mapper namespace="com.sucky.pr.p05Store.dao.StoreDAO">
  	<!-- id는 repository DAO Method    resultType은 (콜룸,변수) 저장된 클래스 지정-->
- 	<select id="selectStoreList" resultType="com.sucky.pr.p02.model.Store">
- 		<!-- sql문 -->
+ 	<select id="selectStore" resultType="com.sucky.pr.p05Store.model.Store">
+ 		
  		SELECT
 	 		`id`
 	 		, `name`
