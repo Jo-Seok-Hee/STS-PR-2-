@@ -28,7 +28,8 @@
 							<td>${book.day }</td>
 							<td>${book.headcount }</td>
 							<td>${book.phoneNumber }</td>
-							<td>${book.state }</td>
+							<td class="text-success">${book.state }</td>
+							<td><button type="button" class="bg-danger text-white">삭제</button></td>
 						</tr>
 					<%--반복 끝 --%>
 					</c:forEach>

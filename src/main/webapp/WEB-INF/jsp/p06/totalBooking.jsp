@@ -26,7 +26,7 @@
 		<div class="container w-50" >
 			<h1 class="text-center pt-3">예약 하기</h1>
 			
-			<form metohd="post" action="/p06/total/booking">
+			
 				<label>이름</label><br>
 				<input type="text" class="form-control" name="name">
 				
@@ -43,23 +43,28 @@
 				<input type="text" class="form-control" name="phoneNumber">
 				<br>
 				<button type="button" class="btn btn-warning form-control" id="bookingBtn">예약 해버리기</button>
-			</form>
+			
 	
 	
 	
 	
 	
 		</div>
+		
+		<jsp:include page="templete/totalFooter.jsp" flush="true"></jsp:include>
 	</div>
-
-
-
-
-
-
-
-
-
-
+	
+	<script>
+		$(document).ready(function(){
+			
+			$("#bookingBtn").on("click",function(){
+				let name = $
+			});
+		});
+	
+	
+	
+	
+	</script>
 </body>
 </html>

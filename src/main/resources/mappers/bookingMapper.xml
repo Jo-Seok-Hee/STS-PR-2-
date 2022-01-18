@@ -31,6 +31,7 @@
 		, `day`
 		, `headcount`
 		, `phoneNumber`
+		, `state`
 		, `createdAt`
 		, `updatedAt`
 		)
@@ -41,6 +42,7 @@
 		, #{day}
 		, #{headcount}
 		, #{phoneNumber}
+		, '대기중'
 		, now()
 		, now()
 		)
