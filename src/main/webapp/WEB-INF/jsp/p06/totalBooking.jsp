@@ -28,7 +28,7 @@
 			
 			
 				<label>이름</label><br>
-				<input type="text" class="form-control" name="name">
+				<input type="text" class="form-control" name="name" id="">
 				
 				<label>예약날짜</label><br>
 				<input type="text" class="form-control" name="date" placeholder="입력 예시: ex)20220114 년,월,일">
@@ -58,7 +58,7 @@
 		$(document).ready(function(){
 			
 			$("#bookingBtn").on("click",function(){
-				let name = $
+				let name = $("#")
 			});
 		});
 	
